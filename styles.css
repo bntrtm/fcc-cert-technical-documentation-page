@@ -1,0 +1,189 @@
+:root {
+    --body-col: #151515;
+    --bg-col1: #919191;
+    --bg-col2: rgb(240, 240, 240);
+    --font-col: white;
+  }
+  
+  * {
+    font-family: arial;
+  }
+  
+  html {
+    font-size: 18;
+    color: var(--font-col);
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--body-col);
+  }
+  
+  p:not(.code-snippet) {
+    padding-left: 10px;
+  }
+  
+  nav > .nav-link {
+    padding: 10px;
+  }
+  
+  .sticky-heading {
+    padding: 0;
+    margin: 0;
+    margin-left: -40px; /* account for padding in #main-doc */
+    width: calc(98vw - 250px); /* vw -navbar_w -margin_for_error */
+    background-color: #252525;
+    position: sticky;
+    top: 0;
+  }
+  
+  
+  h1 {
+    font-size: 1.66rem;
+  }
+  
+  hr {
+    padding: none;
+    color: white;
+    width: 100%;
+    height: 1px;
+  }
+  
+  nav > header {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  
+  section > header {
+    font-size: 1.85rem !important;
+    color: hotpink;
+  }
+  
+  .code-snippet {
+    display: block;
+    font-size: .80rem;
+    font-family: "Courier New", arial;
+    line-height: 200%;
+    background-color: var(--bg-col2);
+    border-radius: 5px;
+    margin-left: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .code-inl {
+    display: inline;
+    color: darkred;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    line-height: 125%;
+    padding: 2px;
+  }
+  
+  ul {
+    line-height: 150%;
+    padding-left: 25px;
+  }
+  
+  #navbar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    overflow: auto;
+  }
+  
+  /* The navigation menu links */
+  .nav-link {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--bg-col1);
+    display: block;
+    border-width: 2px;
+    border-color: solid black;
+    width: 95%;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+  
+  .hdivider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--bg-col1);
+  }
+  
+  .vdivider {
+    height: 100%;
+    width: 2px;
+    background-color: var(--bg-col1);
+    margin-left: 240px;
+    position:fixed;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .nav-link:hover {
+    color: var(--bg-col1);
+  }
+  
+  /* Style page content */
+  
+  nav {
+    background-color: black;
+    z-index: -1;
+  }
+  
+  main {
+    margin-left: 250px;
+  }
+  
+  main {
+    padding: 20px 30px 20px 40px;
+  }
+  
+  #main-doc.main-section>:not(header) {
+    padding-left: 25px;
+  }
+  
+  h1 {
+    color: #00ddff
+  }
+  
+  .rlv {
+    font-weight: bold;
+  }
+  
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-bottom: 25px;
+  }
+  
+  th {
+    background-color: rgb(120, 200, 200);
+    padding: 10px;
+    color: black;
+  }
+  
+  tr:not(:first-child) {
+    border-top: 1px solid white;
+    background-color: var(--bg-col1);
+  }
+  
+  td {
+    min-width: 200px;
+    height: 50px;
+    padding: 15px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, decrease the font sizes */
+  @media screen and (max-height: 450px) {
+    html {
+      font-size: 16;
+    } 
+  }
